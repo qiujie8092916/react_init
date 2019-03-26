@@ -1,0 +1,25 @@
+{
+  "presets": ["react-app"],
+  "plugins": [
+    [
+      "@babel/plugin-proposal-decorators",
+      {
+        "legacy": true
+      }
+    ],
+    ["babel-plugin-styled-components",
+      {
+        "ssr": false,
+        "pure": true
+      }
+    ],
+    ["import", {
+      "libraryName": "antd-mobile",
+      "style": "css"
+    }, "antd-mobile"],
+    ["import", {
+      "libraryName": "lodash",
+      "libraryDirectory": ""
+    }, "lodash"]
+  ]
+}
